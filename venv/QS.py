@@ -5,7 +5,7 @@ def Quick_Sort(A):
     if len(A) <= 1:#чтобы не проверять одноэлементные списки
         return A
     else:
-        c = random.choice(A)#выбирает рандомное число из с
+        c = random.choice(A)#выбирает рандомное число из A
         K = []
         L = []#три списка для хранения чисел меньше, больше и равных с
         R = []
@@ -19,4 +19,4 @@ def Quick_Sort(A):
         return Quick_Sort(K) + R + Quick_Sort(L)
 A=[1,7,5,8,4]
 print(A)
-print("Отсортированный: ",Quick_Sort(A))
+print("Отсортированный: ", Quick_Sort(A))
